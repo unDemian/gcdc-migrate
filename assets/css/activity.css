@@ -1,0 +1,29 @@
+.new {
+    background-color: #EDF9FF;
+}
+
+
+.percentage {
+    width: 80px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+    .percentage .progress {
+        height: 16px;
+        margin-top: 2px;
+    }
+
+    .progress {
+        position: relative;
+    }
+
+    .percent {
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        width: 80px;
+        font-family: Verdana;
+        font-size: 9px;
+        color: white;
+    }

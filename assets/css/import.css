@@ -1,0 +1,145 @@
+.other-accounts {
+    display: none;
+}
+
+.well {
+    background-color: white;
+}
+
+
+.percentage {
+    width: 80px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.percentage .progress {
+    height: 16px;
+    margin-top: 2px;
+}
+
+.percent {
+    position: absolute;
+    left: 10px;
+    top: 11px;
+    width: 80px;
+    font-family: Verdana;
+    font-size: 9px;
+    color: white;
+}
+
+.services {
+    list-style-type: none;
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+.services li {
+    width: 270px;
+    float: left;
+    margin-left: 0px;
+    margin-right: 20px;
+    opacity: 0.4;
+}
+
+.services li.last-per-row {
+    margin-right: 0px;
+}
+
+.services li.selected,
+.services li.selected .list-group-item-heading {
+    color: #555;
+    opacity: 1;
+}
+
+.services li.selected .list-group a {
+    background-color: #f5f5f5;
+}
+
+.services li:hover {
+    opacity: 1;
+}
+
+.services li a.list-group-item  {
+    height: auto;
+}
+
+.services li .service {
+    margin-left: -10px;
+    margin-top: 0px;
+    margin-right: 5px;
+}
+
+.services li .service-text {
+    margin-top: 14px;
+}
+
+
+.services li .list-group-item-text {
+    font-family: Verdana;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #868686;
+}
+
+.services li.selected .list-group-item-text {
+    font-style: italic;
+}
+
+/*
+ * Style twaks
+ * --------------------------------------------------
+ */
+/* Space out content a bit */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.no-jumbo {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 0px;
+}
+.no-jumbo.container {
+    padding-top: 21px;
+}
+
+.no-jumbo h1 {
+    font-size: 36px;
+}
+
+.jumbotron {
+    padding-top: 0px;
+}
+
+.heading {
+    font-weight: bold;
+}
+
+.list-group-item.link {
+    color: #333;
+    background-color: #F5F5F5;
+    border-color: #DDD;
+}
+
+.list-group-item.link:hover,
+.list-group-item.selected {
+    color: #FFF;
+    background-color: #428BCA;
+    border-color: #428BCA;
+}
+
+
+.list-group-item.little {
+    opacity: 0.5;
+}
+
+.list-group-item.little:hover,
+.list-group-item.selected.little {
+    text-decoration: none;
+    background-color: #f5f5f5;
+    border-color: #DDD;
+    opacity: 1;
+}

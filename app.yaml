@@ -1,0 +1,121 @@
+application: gcdc2013-migrate
+version: 1-0-3
+runtime: php
+api_version: 1
+threadsafe: yes
+
+handlers:
+
+############################################################################################
+# General
+############################################################################################
+- url: /assets
+  static_dir: assets
+  secure: always
+
+############################################################################################
+# Auth
+############################################################################################
+- url: /oauth/.*
+  script: app/controllers/auth/oauth.php
+  secure: always
+
+- url: /logout
+  script: app/controllers/auth/logout.php
+  secure: always
+
+############################################################################################
+# Application
+############################################################################################
+- url: /dashboard
+  script: app/controllers/dashboard.php
+  secure: always
+
+- url: /dashboard/.*
+  script: app/controllers/dashboard.php
+  secure: always
+
+
+- url: /migrate/.*
+  script: app/controllers/migrate.php
+  secure: always
+
+- url: /migrate
+  script: app/controllers/migrate.php
+  secure: always
+
+
+- url: /queue/.*
+  script: app/controllers/queue.php
+  secure: always
+
+- url: /queue
+  script: app/controllers/queue.php
+  secure: always
+
+
+- url: /share/.*
+  script: app/controllers/share.php
+  secure: always
+
+- url: /share
+  script: app/controllers/share.php
+  secure: always
+
+- url: /shared/.*
+  script: app/controllers/shared.php
+  secure: always
+
+- url: /shared
+  script: app/controllers/shared.php
+  secure: always
+
+
+- url: /activity/.*
+  script: app/controllers/activity.php
+  secure: always
+
+- url: /activity
+  script: app/controllers/activity.php
+  secure: always
+
+- url: /backup/.*
+  script: app/controllers/backup.php
+  secure: always
+
+- url: /backup
+  script: app/controllers/backup.php
+  secure: always
+
+- url: /import/.*
+  script: app/controllers/import.php
+  secure: always
+
+- url: /import
+  script: app/controllers/import.php
+  secure: always
+
+- url: /clean/.*
+  script: app/controllers/clean.php
+  secure: always
+
+- url: /clean
+  script: app/controllers/clean.php
+  secure: always
+
+
+- url: /accounts/.*
+  script: app/controllers/accounts.php
+  secure: always
+
+- url: /accounts
+  script: app/controllers/accounts.php
+  secure: always
+
+- url: /
+  script: app/controllers/login.php
+  secure: always
+
+- url: /.*
+  script: app/controllers/error.php
+  secure: always

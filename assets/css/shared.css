@@ -1,0 +1,148 @@
+/***************************************** General *****************************************/
+html, body {
+    height: 100%;
+    font-family: Verdana;
+}
+
+/***************************************** Layout *****************************************/
+body {
+    padding-top: 110px;
+
+    /*background: #d9e1ec;
+    background: -moz-linear-gradient(-45deg,  #d9e1ec 50%, #d4dce7 50%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#d9e1ec), color-stop(50%,#d4dce7));
+    background: -webkit-linear-gradient(-45deg,  #d9e1ec 50%,#d4dce7 50%);
+    background: -o-linear-gradient(-45deg,  #d9e1ec 50%,#d4dce7 50%);
+    background: -ms-linear-gradient(-45deg,  #d9e1ec 50%,#d4dce7 50%);
+    background: linear-gradient(135deg,  #d9e1ec 50%,#d4dce7 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e1ec', endColorstr='#d4dce7',GradientType=1 );
+*/
+    overflow: hidden;
+    min-height: 100%;
+}
+
+    .header {
+        height: 113px;
+        background-color: #40536e;
+        border-bottom: 10px solid #2d3e55 !important;
+        z-index: 0;
+    }
+
+        .logo {
+            width: 115px;
+            margin-top: -7px !important;
+        }
+
+
+
+    footer {
+        width: 100%;
+        height: 70px;
+        background-color: #F8F8F8;
+        border-top: 3px solid #D3D3D3;
+        position: fixed;
+        position: absolute;
+        bottom: 0px;
+        z-index: 2;
+
+        color: #939393;
+        font-size: 11px;
+    }
+
+        .copyright {
+            padding-left: 117px;
+            padding-top: 5px;
+        }
+
+            .copyright img {
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: -5px;
+                padding-right: 0px;
+            }
+
+/***************************************** Button *****************************************/
+#gSignInWrapper {
+    opacity: 1;
+    margin-top: 40px;
+}
+
+#gSignInWrapper:hover {
+    opacity: 1;
+}
+
+    #customBtn {
+        background: #dd4b39;
+        color: white;
+        width: 387px;
+        margin: 0px auto !important;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+        #customBtn:hover {
+            background: #e74b37;
+            cursor: pointer;
+        }
+            span.label {
+                font-weight: bold;
+            }
+            span.icon {
+                background: url('../images/btn-red.png') transparent 5px 50% no-repeat;
+                display: inline-block;
+                vertical-align: middle;
+                width: 56px;
+                height: 56px;
+                border-right: #bb3f30 1px solid;
+            }
+            span.buttonText {
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 52px;
+                padding-right: 57px;
+                font-size: 14px;
+                font-weight: bold;
+                /* Use the Roboto font that is loaded in the <head> */
+                font-family: 'Roboto',arial,sans-serif;
+            }
+
+    .list-group-item.link {
+        color: #333;
+        background-color: #F5F5F5;
+        border-color: #DDD;
+    }
+
+    .list-group-item.link:hover,
+    .list-group-item.selected {
+        color: #FFF;
+        background-color: #428BCA;
+        border-color: #428BCA;
+    }
+
+
+    .list-group-item.little {
+        opacity: 0.5;
+    }
+
+    .list-group-item.little:hover,
+    .list-group-item.selected.little {
+        text-decoration: none;
+        background-color: #f5f5f5;
+        border-color: #DDD;
+        opacity: 1;
+    }
+
+    .list-group-item.selected i {
+        color: #2D3E55;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-right: 0px;
+    }
+
+
+/***************************************** Responsiveness *****************************************/
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+

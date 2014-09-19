@@ -1,0 +1,203 @@
+/***************************************** General *****************************************/
+.tabel-label,
+.tabel-data {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tabel-label {
+    font-style: italic;
+}
+
+.tabel-data {
+    font-weight: bold;
+}
+
+    .tabel-data .percent {
+        top: 0px;
+        left: 0px;
+    }
+
+    .tabel-data i {
+        margin-top: 3px;
+        opacity: 0.3;
+    }
+
+/***************************************** Wizard *****************************************/
+#wizard {
+    margin-bottom: 60px;
+}
+
+    #wizard .nav-tabs {
+        border: 0;
+    }
+
+    #wizard .tab-content {
+        border: 1px solid #DDD;
+        border-radius: 5px;
+        padding: 15px;
+        color: #2D3E55;
+    }
+
+/***************************************** Graph *****************************************/
+.block {
+    margin-bottom: 40px;
+}
+
+    .scheme {
+        width: 15px;
+        height: 15px;
+        float: left;
+        border: 1px solid #ffffff;
+        margin-top: 2px;
+        margin-right: 5px;
+    }
+
+        .scheme-from {
+            outline: 1px solid #8EC8DF;
+            background-color: #bbecff;
+        }
+
+        .scheme-to {
+            outline: 1px solid #A3CAA4;
+            background: #d3ffd5;
+        }
+
+        .scheme-other {
+            outline: 1px solid #CDCDCD;
+            background: #fafafa;
+        }
+
+        .scheme-move {
+            outline: 1px solid #E2C7C7;
+            background: #FFE4E4;
+        }
+
+    .block .legend {
+        font-style: italic;
+    }
+
+    .block a:hover {
+        text-decoration: none;
+    }
+
+    .graph strong {
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .sub-block {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+        .sub-block ul {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            list-style-type: none;
+            padding-left: 0px;
+        }
+            .sub-block ul li {
+                text-align: center;
+                padding: 4px;
+            }
+
+    .bottom {
+        border-bottom: 1px solid #CDCDCD;
+        border-left: 1px solid #CDCDCD;
+        border-right: 1px solid #CDCDCD;
+    }
+
+    .cut {
+        border-radius: 5px 5px 0px 0px;
+        background: #FFE4E4;
+    }
+
+        .cut.top {
+            border: 1px solid #E2C7C7;
+        }
+
+    .from {
+        background-color: #bbecff;
+        border-left: 1px solid #8EC8DF;
+        border-right: 1px solid #8EC8DF;
+        border-bottom: 1px solid #8EC8DF;
+    }
+        .from.top {
+            border-radius: 5px 5px 0px 0px;
+            border: 1px solid #8EC8DF;
+        }
+
+    .to {
+        background: #d3ffd5;
+        border-left: 1px solid #A3CAA4;
+        border-right: 1px solid #A3CAA4;
+        border-bottom: 1px solid #A3CAA4;
+    }
+        .to.top {
+            border-radius: 5px 5px 0px 0px;
+            border: 1px solid #A3CAA4;
+        }
+
+
+.other {
+        background: #fafafa;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .linking {
+        position: absolute;
+        top: 45px;
+        height: 20px;
+        width: 100%;
+
+        border-top: 1px solid #CDCDCD;
+        border-bottom: 1px solid #CDCDCD;
+
+        background: #bbecff;
+        background: -moz-linear-gradient(left,  #bbecff 0%, #d3ffd5 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#bbecff), color-stop(100%,#d3ffd5));
+        background: -webkit-linear-gradient(left,  #bbecff 0%,#d3ffd5 100%);
+        background: -o-linear-gradient(left,  #bbecff 0%,#d3ffd5 100%);
+        background: -ms-linear-gradient(left,  #bbecff 0%,#d3ffd5 100%);
+        background: linear-gradient(to right,  #bbecff 0%,#d3ffd5 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbecff', endColorstr='#d3ffd5',GradientType=1 );
+    }
+
+    .linking-inverse {
+        position: absolute;
+        top: 30px;
+        height: 20px;
+        width: 100%;
+
+        border-top: 1px solid #CDCDCD;
+        border-bottom: 1px solid #CDCDCD;
+
+        background: #d3ffd5;
+        background: -moz-linear-gradient(left,  #d3ffd5 0%, #bbecff 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d3ffd5), color-stop(100%,#bbecff));
+        background: -webkit-linear-gradient(left,  #d3ffd5 0%,#bbecff 100%);
+        background: -o-linear-gradient(left,  #d3ffd5 0%,#bbecff 100%);
+        background: -ms-linear-gradient(left,  #d3ffd5 0%,#bbecff 100%);
+        background: linear-gradient(to right,  #d3ffd5 0%,#bbecff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3ffd5', endColorstr='#bbecff',GradientType=1 );
+    }
+
+    .linking-cut {
+        position: absolute;
+        top: 45px;
+        height: 20px;
+        width: 100%;
+
+        border-top: 1px solid #CDCDCD;
+        border-bottom: 1px solid #CDCDCD;
+
+        background: #FFE4E4;
+        background: -moz-linear-gradient(left,  #FFE4E4 0%, #d3ffd5 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFE4E4), color-stop(100%,#d3ffd5));
+        background: -webkit-linear-gradient(left,  #FFE4E4 0%,#d3ffd5 100%);
+        background: -o-linear-gradient(left,  #FFE4E4 0%,#d3ffd5 100%);
+        background: -ms-linear-gradient(left,  #FFE4E4 0%,#d3ffd5 100%);
+        background: linear-gradient(to right,  #FFE4E4 0%,#d3ffd5 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE4E4', endColorstr='#d3ffd5',GradientType=1 );
+    }

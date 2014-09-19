@@ -1,0 +1,40 @@
+/***************************************** General *****************************************/
+.tabel-label,
+.tabel-data {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tabel-label {
+    font-style: italic;
+}
+
+.tabel-data {
+    font-weight: bold;
+}
+
+    .tabel-data .percent {
+        top: 0px;
+        left: 0px;
+    }
+
+    .tabel-data i {
+        margin-top: 3px;
+        opacity: 0.3;
+    }
+
+/***************************************** Wizard *****************************************/
+#wizard {
+    margin-bottom: 60px;
+}
+
+    #wizard .nav-tabs {
+        border: 0;
+    }
+
+    #wizard .tab-content {
+        border: 1px solid #DDD;
+        border-radius: 5px;
+        padding: 15px;
+        color: #2D3E55;
+    }
